@@ -75,8 +75,10 @@ nav {
 }
 
 /* Sections */
-section {
+html {
   scroll-behavior: smooth;
+}
+section {
   min-height: 100vh;
   display: flex;
   align-items: center;
