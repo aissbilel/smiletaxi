@@ -1,50 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="icon" href="icons/favicon.png">
-<title>Smile Taxi - Le taxi avec un :)</title>
-<link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-<header>
-<nav>
-<a href="#services">Nos services</a>
-<a href="#tarifs">Tarifs</a>
-<a href="#reservation">Réserver maintenant</a>
-</nav>
-</header>
-<main>
-<section id="services">
-<h1>Nos services de taxi</h1>
-<p>Nous offrons des services de taxi adaptés à tous vos besoins, que ce soit pour des déplacements professionnels ou privés.</p>
-<ul>
-<li>Transferts aéroport</li>
-<li>Tours de ville</li>
-<li>Transports de groupe</li>
-</ul>
-</section>
-<section id="tarifs">
-<h1>Nos tarifs</h1>
-<p>Nos tarifs sont compétitifs et transparents. Consultez notre grille tarifaire pour plus de détails.</p>
-<a href="#">Voir nos tarifs</a>
-</section>
-<section id="reservation">
-<h1>Réservez maintenant</h1>
-<form action="booking.php" method="post">
-<label for="pickup-location">Emplacement de prise en charge</label>
-<input type="text" id="pickup-location" name="pickup-location">
-<label for="dropoff-location">Emplacement de dépose</label>
-<input type="text" id="dropoff-location" name="dropoff-location">
-<label for="date">Date</label>
-<input type="date" id="date" name="date">
-<label for="time">Heure</label>
-<input type="time" id="time" name="time">
-<input type="submit" value="Réserver">
-</form>
-</section>
-</main>
-<footer>
-<p>Copyright © Smile Taxi</p>
-</footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Smile taxi - Le taxi avec un sourire</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <a href="#about">A propos de nous</a>
+      <a href="#services">Nos services</a>
+      <a href="#contact">Nous contacter</a>
+    </nav>
+    <h1>Smile taxi</h1>
+    <section id="about" class="active">
+      <h2>A propos de nous</h2>
+      <p>Smile taxi est une entreprise de taxi qui a pour mission de rendre les déplacements de ses clients agréables et souriants. Nous avons une équipe de chauffeurs professionnels et sympathiques, qui se plieront en quatre pour vous satisfaire.</p>
+    </section>
+    <section id="services">
+      <h2>Nos services</h2>
+      <p>Nous proposons des trajets à la demande, des réservations à l'avance, des transferts vers les aéroports et gares, des visites touristiques, etc. Nous disposons de véhicules confortables et bien équipés pour répondre à tous vos besoins.</p>
+    </section>
+    <section id="contact">
+      <h2>Nous contacter</h2>
+      <p>Pour réserver un taxi ou pour toute question, n'hésitez pas à nous contacter par téléphone, par email, ou via notre formulaire en ligne. Nous sommes à votre écoute 24/7.</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
