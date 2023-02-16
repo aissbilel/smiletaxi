@@ -142,3 +142,7 @@ section {
 .services {
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
+
+.hidden {
+  display: none;
+}
