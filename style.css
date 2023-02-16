@@ -23,21 +23,8 @@ body {
   justify-content: space-between;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
 
-h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
 
-p {
-  margin-bottom: 1rem;
-}
 
 
 /* Navigation menu */
