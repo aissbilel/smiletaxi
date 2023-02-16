@@ -113,7 +113,9 @@ section {
   background-color: #120052;
   margin-top: 50px;
 }
-
+.services {
+  padding-top: 60px; /* Add padding to account for the height of the navigation bar */
+}
 #contact {
   background-color: #b537f2;
 }
