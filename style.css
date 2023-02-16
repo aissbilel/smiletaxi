@@ -93,36 +93,10 @@ section {
   background-position: center;
   text-align: center;
   position: relative;
-  opacity: 0.7; /* 0.7 représente 30% d'opacité */
+  opacity: 0.3; /* 0.3 représente 70% d'opacité */
 }
 
 
 .services {
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
-
-/* Chargement */
-.loader{
-	background: url('images/ajax-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
-	cursor: wait;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-}
-	.loader h1{
-		background: none;
-		border: none;
-		color: #458976;
-		font-size: 22px;
-		font-family: "Open Sans",sans-serif;
-		font-variant: small-caps;
-		font-weight: 700;
-		height: 700px;
-		line-height: 700px;
-		margin: 0 0 10px;
-		padding: 0;
-		text-align: center;
-	}
