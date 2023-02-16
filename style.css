@@ -92,8 +92,10 @@ section {
 }
 
 .about-us {
+  background-color: rgba(0, 0, 0, 0.3);
   background-image: url('images/wallpaper.jpeg');
   background-size: cover;
   background-position: center;
 }
+
 
