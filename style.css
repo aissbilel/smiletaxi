@@ -70,19 +70,8 @@ nav {
   display: inline-block;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
   z-index: 1;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 2rem;
-}
-
-nav a:hover {
-  color: #3b5bdb;
 }
 
 /* Sections */
