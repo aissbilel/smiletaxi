@@ -27,19 +27,16 @@ h1 {
   font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
 h2 {
   font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 p {
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 
@@ -90,6 +87,9 @@ section {
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
 
+.about-us {
+  text-align: right;
+}
 .home {
   background-image: url('images/wallpaper.jpeg');
   background-size: cover;
