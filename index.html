@@ -7,8 +7,15 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <script src="script.js"></script>
 </head>
+	
 <body>
 	
+<div class="loader">
+<h1>Veuillez patientez pendant le chargement de la page.</h1>
+</div>
+<script>
+jQuery(window).load(function(){ jQuery(".loader").fadeOut("200"); });
+</script>	
  <nav>
   <div class="topnav">
     <a href="#about-us">A propos de nous</a>
