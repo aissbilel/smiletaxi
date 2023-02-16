@@ -81,6 +81,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.tableau-invisible {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* répartit l'espace en deux colonnes */
+  grid-column-gap: 20px; /* ajoute un espace de 20 pixels entre les colonnes */
+}
+
+/* style pour le h2 */
+.tableau-invisible h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* style pour les paragraphes */
+.tableau-invisible p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+
 section {
   min-height: 100vh;
   display: flex;
