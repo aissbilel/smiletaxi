@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mon site web</title>
+	<title>Smile Taxi - Le taxi avec un sourire</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<nav>
+		<ul>
+			<li><a href="#about">A propos de nous</a></li>
+			<li><a href="#services">Nos services</a></li>
+			<li><a href="#contact">Nous contacter</a></li>
+		</ul>
+	</nav>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">Nos services</a></li>
-				<li><a href="#">Notre équipe</a></li>
-				<li><a href="#">Contactez-nous</a></li>
-			</ul>
-			<div class="logo">
-				<img src="logo.png" alt="Logo">
-			</div>
-		</nav>
+		<h1>Smile Taxi</h1>
+		<h2>Le taxi avec un sourire</h2>
+		<button class="btn">Contactez-nous</button>
 	</header>
 	<main>
-		<section>
-			<div class="button_container">
-				<button class="btn"><span>A propos de nous</span></button>
-			</div>
-			<h1>Section 1</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor orci est, in efficitur mauris aliquet eu. Nullam tristique, velit sed lacinia elementum, enim dui dapibus magna, sed molestie eros arcu non libero. Nunc vel tincidunt turpis. Sed vel ligula euismod, sollicitudin elit sit amet, bibendum ipsum. Proin faucibus sagittis diam, eu suscipit libero iaculis eget. In convallis nibh vel sollicitudin rhoncus. Nunc feugiat scelerisque tortor, sed consectetur elit bibendum ac. Donec interdum tincidunt neque, nec vehicula nisi vehicula quis. Suspendisse potenti. Nullam dignissim, felis eu malesuada convallis, ex eros tincidunt odio, id eleifend purus ipsum a mi. Aliquam vestibulum pellentesque velit, ac sollicitudin nibh.</p>
-			<p>Mauris non magna vel neque tempor porttitor. Maecenas interdum mi nec lectus consectetur, sed pharetra dolor vehicula. Ut eget elementum odio, eget sollicitudin dui. Sed vitae libero orci. Nullam suscipit nibh vitae lorem tincidunt, at accumsan arcu blandit. Fusce tristique ut elit eu aliquet. Duis quis dolor euismod, commodo ex sit amet, consequat mi. Pellentesque sagittis bibendum velit id tristique. Nunc malesuada nisi sed elit hendrerit, vel euismod augue consectetur. Donec bibendum, dui a lacinia placerat, nisi magna luctus lorem, ac pharetra tortor turpis vel urna.</p>
-			<p>Pellentesque id lorem blandit, sodales odio ut, laoreet velit. Proin non lacus ut turpis gravida vehicula ut sit amet dolor. Fusce lobortis sit amet ipsum eu sagittis. Aliquam maximus magna vel libero rhoncus, a aliquet magna pulvinar. Vivamus sed magna sit amet nibh pretium ullamcorper a eu arcu. Fusce commodo libero in elementum vehicula. Sed vitae risus quis ipsum commodo posuere. Vestibulum et ultricies quam. Vestibulum eu luct
+		<section id="about">
+			<h2>A propos de nous</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse sodales risus sit amet orci convallis, sed interdum odio fermentum. Sed sit amet sapien quis lacus feugiat suscipit. Fusce bibendum neque libero, euismod hendrerit felis pellentesque nec. Praesent quis elit elit. </p>
+		</section>
+		<section id="services">
+			<h2>Nos services</h2>
+			<ul>
+				<li>Transport privé</li>
+				<li>Transport de groupe</li>
+				<li>Transport aéroportuaire</li>
+				<li>Service de livraison</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h2>Nous contacter</h2>
+			<form>
+				<label for="name">Nom:</label>
+				<input type="text" id="name" name="name">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<button class="btn">Envoyer</button>
+			</form>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
