@@ -1,46 +1,29 @@
-// Récupération des éléments HTML
-const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('section');
-const btn = document.querySelector('.btn');
-
-// Fonction pour animer la navigation
-function animateNavigation(event) {
-  event.preventDefault();
-
-  // Récupération de l'élément cliqué
-  const targetLink = event.target;
-  const targetId = targetLink.getAttribute('href');
-
-  // Animation de la navigation
-  $('html, body').animate({
-    scrollTop: $(targetId).offset().top
-  }, 1000);
-}
-
-// Fonction pour animer les sections
-function animateSections(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate');
+//Sélectionnez tous les liens de navigation avec des ancres
+$('a[href*="#"]')
+  //Retirer tout lien qui ne contient qu'un dièse (#)
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // Empêcher le comportement de clic par défaut
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Définir la cible d'ancrage
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Vérifier si la cible d'ancrage existe
+      if (target.length) {
+        // Empêcher le comportement de clic par défaut
+        event.preventDefault();
+        // Définir la vitesse de défilement et la distance entre la cible d'ancrage et le haut de la page
+        var speed = 1000; // vitesse en millisecondes
+        var offset = target.offset().top;
+        // Animer le défilement
+        $('html, body').animate({
+          scrollTop: offset
+        }, speed);
+      }
     }
   });
-}
-
-// Configuration de l'Observer pour animer les sections
-const observer = new IntersectionObserver(animateSections, {
-  root: null,
-  threshold: 0.5
-});
-
-// Ajout de l'Observer sur chaque section
-sections.forEach(section => {
-  observer.observe(section);
-});
-
-// Ajout d'un événement de clic sur chaque lien de navigation
-navLinks.forEach(link => {
-  link.addEventListener('click', animateNavigation);
-});
-
-// Ajout d'un événement de clic sur le bouton
-btn.addEventListener('click', animateNavigation);
