@@ -117,20 +117,4 @@ section {
 .services {
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
-#contact {
-  background-color: #b537f2;
-}
-#about, #services, #contact {
-  position: relative;
-}
 
-#about::before, #services::before, #contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)); /* dégradé transparent */
-  z-index: -1;
-}
