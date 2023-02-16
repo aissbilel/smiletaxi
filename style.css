@@ -74,6 +74,11 @@ nav {
   z-index: 1;
 }
 
+.nav-bar {
+list-style: none;
+display: inline-block;
+}
+
 /* Sections */
 section {
   min-height: 100vh;
