@@ -87,7 +87,11 @@ section {
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
 
+.about-us {
+  text-align: center;
+}
 .home {
+  text-align: center;
   background-image: url('images/wallpaper.jpeg');
   background-size: cover;
   background-position: center;
@@ -95,7 +99,7 @@ section {
   position: relative;
 }
 
-
 .services {
+  text-align: center;
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
