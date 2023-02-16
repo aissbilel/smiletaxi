@@ -90,3 +90,10 @@ section {
   justify-content: center;
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
+
+.about-us {
+  background-image: url('images/wallpaper.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
