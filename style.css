@@ -7,16 +7,12 @@
 
 /* Global styles */
 body {
-  background: linear-gradient(to bottom, rgba(0,0,92, 0.5), rgba(173,25,202, 0.5);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
+  background: linear-gradient(to bottom, rgba(18, 0, 82, 0.5), rgba(181, 55, 242, 0.5));
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
-
 
 .container {
   max-width: 1200px;
@@ -91,11 +87,50 @@ section {
   padding-top: 60px; /* Add padding to account for the height of the navigation bar */
 }
 
-.about-us {
-  background-color: rgba(0, 0, 0, 0.3);
+#home {
   background-image: url('images/wallpaper.jpeg');
   background-size: cover;
   background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 
+#about {
+  background-color: #3b5bdb;
+}
+
+#services {
+  background-color: #120052;
+  margin-top: 50px;
+}
+.services {
+  padding-top: 60px; /* Add padding to account for the height of the navigation bar */
+}
+#contact {
+  background-color: #b537f2;
+}
+#about, #services, #contact {
+  position: relative;
+}
+
+#about::before, #services::before, #contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)); /* dégradé transparent */
+  z-index: -1;
+}
