@@ -1,1 +1,49 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<title>Taxi Company - Réservation en ligne</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<nav>
+<a href="#services">Nos services</a>
+<a href="#tarifs">Tarifs</a>
+<a href="#reservation">Réserver maintenant</a>
+</nav>
+</header>
+<main>
+<section id="services">
+<h1>Nos services de taxi</h1>
+<p>Nous offrons des services de taxi adaptés à tous vos besoins, que ce soit pour des déplacements professionnels ou privés.</p>
+<ul>
+<li>Transferts aéroport</li>
+<li>Tours de ville</li>
+<li>Transports de groupe</li>
+</ul>
+</section>
+<section id="tarifs">
+<h1>Nos tarifs</h1>
+<p>Nos tarifs sont compétitifs et transparents. Consultez notre grille tarifaire pour plus de détails.</p>
+<a href="#">Voir nos tarifs</a>
+</section>
+<section id="reservation">
+<h1>Réservez maintenant</h1>
+<form action="booking.php" method="post">
+<label for="pickup-location">Emplacement de prise en charge</label>
+<input type="text" id="pickup-location" name="pickup-location">
+<label for="dropoff-location">Emplacement de dépose</label>
+<input type="text" id="dropoff-location" name="dropoff-location">
+<label for="date">Date</label>
+<input type="date" id="date" name="date">
+<label for="time">Heure</label>
+<input type="time" id="time" name="time">
+<input type="submit" value="Réserver">
+</form>
+</section>
+</main>
+<footer>
+<p>Copyright © Taxi Company</p>
+</footer>
+</body>
+</html>
