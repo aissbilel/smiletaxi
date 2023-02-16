@@ -92,7 +92,7 @@ section {
 
 .about-us p {
   margin-bottom: 1rem;
-  text-align: center;
+  display: block;
   clear: both;
 }
 
