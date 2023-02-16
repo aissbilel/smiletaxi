@@ -39,25 +39,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.2rem;
-  background-color: transparent;
-  color: #000;
-  border: none;
-  border-radius: 3px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.btn:hover {
-  background-color: #3b5bdb;
-  color: #fff;
-}
 
 /* Navigation menu */
 /* Add a black background color to the top navigation */
@@ -68,7 +49,7 @@ p {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
+  float: center;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
