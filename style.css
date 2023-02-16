@@ -7,7 +7,7 @@
 
 /* Global styles */
 body {
-  background: linear-gradient(to bottom, rgba(0,0,92,1) 0%, rgba(159,69,176,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,92,1) 0%, rgba(159,69,176,1) 50%);
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -93,7 +93,6 @@ section {
   background-position: center;
   text-align: center;
   position: relative;
-  opacity: 0.3; /* 0.3 représente 70% d'opacité */
 }
 
 
