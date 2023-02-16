@@ -46,7 +46,7 @@ nav {
   top: 0;
   text-align: center;
   width: 100%;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0);
   z-index: 999; /* Set a high z-index value */
 }
 
