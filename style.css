@@ -42,7 +42,7 @@ p {
 .btn {
   display: inline-block;
   padding: 0.8rem 1.2rem;
-  background-color: #fff;
+  background-color: transparent;
   color: #000;
   border: none;
   border-radius: 3px;
