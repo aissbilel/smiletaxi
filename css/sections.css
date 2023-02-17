@@ -38,13 +38,16 @@ margin-bottom: 2rem;
 }
 
 .about-us h2 {
-text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-
 .about-us p {
-margin-bottom: 1rem;
-display: block;
-clear: both;
+  margin-bottom: 1rem;
+  display: block;
+  clear: both;
+  text-align: justify;
 }
 
 .home {
@@ -78,6 +81,23 @@ padding: 40px 0;
   align-items: center;
 }
 
+
+.image-container {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 header {
 text-align: center
