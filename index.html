@@ -74,62 +74,74 @@
 </section>
 
 	      
+
 <section id="contact" class="contact">
-  <table class="table-title">
-    <tr>
-      <td>
-        <h2>Nous contacter</h2>
-      </td>
-    </tr>
-  </table>
-  <table class="table-form">
-    <tr>
-      <td>
-        <form>
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required>
+  <div class="table-container">
+    <table class="table1">
+      <tbody>
+        <tr>
+          <td>
+            <h2 style="text-align: center;">Nous contacter</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="table-form">
+              <tbody>
+                <tr>
+                  <td>
+                    <form>
+                      <label for="nom">Nom :</label>
+                      <input type="text" id="nom" name="nom" required>
 
-          <label for="prenom">Prénom :</label>
-          <input type="text" id="prenom" name="prenom" required>
+                      <label for="prenom">Prénom :</label>
+                      <input type="text" id="prenom" name="prenom" required>
 
-          <label for="email">E-mail :</label>
-          <input type="email" id="email" name="email" required>
+                      <label for="email">E-mail :</label>
+                      <input type="email" id="email" name="email" required>
 
-          <label for="telephone">Numéro de téléphone :</label>
-          <input type="tel" id="telephone" name="telephone" required>
+                      <label for="telephone">Numéro de téléphone :</label>
+                      <input type="tel" id="telephone" name="telephone" required>
 
-          <label for="objet">Objet de votre demande :</label>
-          <select id="objet" name="objet" required>
-            <option value="" disabled selected>-- Choisissez une option --</option>
-            <option value="demande_de_renseignement">Demande de renseignement</option>
-            <option value="demande_de_reservation">Demande de réservation</option>
-          </select>
+                      <label for="objet">Objet de votre demande :</label>
+                      <select id="objet" name="objet" required>
+                        <option value="" disabled selected>-- Choisissez une option --</option>
+                        <option value="demande_de_renseignement">Demande de renseignement</option>
+                        <option value="demande_de_reservation">Demande de réservation</option>
+                      </select>
 
-          <div id="demande_renseignement" class="hidden">
-            <label for="message">Votre message (500 caractères max) :</label>
-            <textarea id="message" name="message" maxlength="500"></textarea>
-          </div>
+                      <div id="demande_renseignement" class="hidden">
+                        <label for="message">Votre message (500 caractères max) :</label>
+                        <textarea id="message" name="message" maxlength="500"></textarea>
+                      </div>
 
-          <div id="demande_reservation" class="hidden">
-            <label for="adresse_depart">Adresse de départ :</label>
-            <input type="text" id="adresse_depart" name="adresse_depart">
+                      <div id="demande_reservation" class="hidden">
+                        <label for="adresse_depart">Adresse de départ :</label>
+                        <input type="text" id="adresse_depart" name="adresse_depart">
 
-            <label for="adresse_arrivee">Adresse d'arrivée :</label>
-            <input type="text" id="adresse_arrivee" name="adresse_arrivee">
+                        <label for="adresse_arrivee">Adresse d'arrivée :</label>
+                        <input type="text" id="adresse_arrivee" name="adresse_arrivee">
 
-            <label for="heure_depart">Heure de départ :</label>
-            <input type="time" id="heure_depart" name="heure_depart">
+                        <label for="heure_depart">Heure de départ :</label>
+                        <input type="time" id="heure_depart" name="heure_depart">
 
-            <label for="date_prise_en_charge">Date de prise en charge :</label>
-            <input type="date" id="date_prise_en_charge" name="date_prise_en_charge">
-          </div>
+                        <label for="date_prise_en_charge">Date de prise en charge :</label>
+                        <input type="date" id="date_prise_en_charge" name="date_prise_en_charge">
+                      </div>
 
-          <button type="submit">Envoyer</button>
-        </form>
-      </td>
-    </tr>
-  </table>
+                      <button type="submit">Envoyer</button>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </section>
+
 
 
 
