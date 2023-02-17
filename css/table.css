@@ -1,37 +1,39 @@
+/* Tableaux */
 .table-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: table;
+  width: 100%;
 }
 
 .table1, .table2 {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
-  border-collapse: collapse;
+  display: table-row;
 }
 
 .table1 td, .table2 td {
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: none;
+}
+
+.table1 td {
   text-align: center;
 }
 
+.text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  width: 50%;
+}
+
 .image-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-@media only screen and (min-width: 768px) {
-  .table-container {
-    flex-direction: row;
-  }
-
-  .table1 {
-    margin-right: 20px;
-  }
-
-  .table1 td, .table2 td {
-    text-align: left;
-  }
+/* Titres */
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
 }
