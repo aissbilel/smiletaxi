@@ -18,3 +18,26 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 }
+
+@media (max-width: 480px) {
+  .table-form {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+  }
+}
