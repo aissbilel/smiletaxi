@@ -183,3 +183,10 @@ header {
 .text-container p {
   margin-bottom: 20px;
 }
+
+/* largeur de la page */
+
+.full-width {
+  max-width: 100%;
+  margin: 0 auto;
+}
