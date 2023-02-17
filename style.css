@@ -147,20 +147,41 @@ section {
   display: none;
 }
 
-.table-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* tableau css */
 
-table {
+.about-us {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.image-container {
   width: 50%;
-  border-collapse: collapse;
+  float: left;
 }
 
-td {
-  height: 50px;
-  border: 1px solid black;
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+.text-container {
+  width: 50%;
+  float: right;
+  padding-left: 40px;
+}
+
+.text-container p {
+  margin-bottom: 20px;
+}
