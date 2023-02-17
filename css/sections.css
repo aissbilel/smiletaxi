@@ -1,0 +1,84 @@
+html {
+scroll-behavior: smooth;
+}
+.tableau-invisible {
+grid-template-columns: 1fr 2fr; /* répartit l'espace en deux colonnes /
+grid-column-gap: 20px; / ajoute un espace de 20 pixels entre les colonnes */
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+/* style pour le h2 */
+.tableau-invisible h2 {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+/* style pour les paragraphes */
+.tableau-invisible p {
+font-size: 1.2em;
+line-height: 1.5;
+}
+
+section {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 60px; /* Add padding to account for the height of the navigation bar */
+}
+
+.about-us {
+text-align: center;
+}
+
+.about-us h1 {
+font-size: 3rem;
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+
+.about-us h2 {
+font-size: 2rem;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
+.about-us p {
+margin-bottom: 1rem;
+display: block;
+clear: both;
+}
+
+.home {
+background-size: cover;
+background-position: center;
+text-align: center;
+position: relative;
+}
+
+.services {
+padding-top: 60px; /* Add padding to account for the height of the navigation bar */
+}
+
+.hidden {
+display: none;
+}
+
+/* tableau css */
+
+.about-us {
+padding: 40px 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+header {
+text-align: center
