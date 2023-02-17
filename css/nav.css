@@ -1,0 +1,32 @@
+nav {
+position: fixed;
+top: 0;
+text-align: center;
+width: 100%;
+background-color: rgba(0, 0, 0, 0);
+z-index: 999; /* Set a high z-index value */
+}
+
+.topnav {
+overflow: hidden;
+height: 60px;
+}
+
+.topnav a {
+display: inline-block;
+color: #ffffff;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
