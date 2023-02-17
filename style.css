@@ -1,7 +1,9 @@
 /* Pour les écrans de taille moyenne et plus grands */
 @media only screen and (min-width: 768px) {
-  .container {
-    width: 90%;
+  .tableau-invisible {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -82,9 +84,13 @@ html {
 }
 
 .tableau-invisible {
-  display: grid;
   grid-template-columns: 1fr 2fr; /* répartit l'espace en deux colonnes */
   grid-column-gap: 20px; /* ajoute un espace de 20 pixels entre les colonnes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* style pour le h2 */
