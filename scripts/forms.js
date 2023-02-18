@@ -1,3 +1,6 @@
+// Resize your browser for effect
+
+
 const objet = document.getElementById('objet');
 const demandeRenseignement = document.getElementById('demande_renseignement');
 const demandeReservation = document.getElementById('demande_reservation');
