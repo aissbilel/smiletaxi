@@ -1,70 +1,75 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-  font-family: 'segoe ui';
-}
-
-.nav {
-  height: 50px;
-  width: 100%;
-  background-color: #4d4d4d;
-  position: relative;
-}
-
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-links {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  color: #fff;
-  padding: 15px;
-  text-decoration: none;
-}
-
-.nav > .nav-links > a:hover {
+.navbar {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
-  color: #4d4d4d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-.nav-btn {
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-toggle {
   display: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-  .nav > .nav-links {
+.navbar-toggle-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  margin: 4px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-menu {
     display: none;
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 65px;
     left: 0;
     width: 100%;
-    background-color: #4d4d4d;
-    z-index: 1;
+    padding: 20px;
+    background-color: #fff;
   }
-  .nav > .nav-links > a {
+  .navbar-toggle {
     display: block;
-    border-bottom: 1px solid #fff;
   }
-  .nav > .nav-btn {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-menu {
+    display: flex;
+  }
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  .navbar-links li a {
+    font-size: 18px;
+    color: #000;
   }
 }
