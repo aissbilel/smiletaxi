@@ -1,14 +1,4 @@
 
-const navbarToggle = document.querySelector('.navbar-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
-
-navbarToggle.addEventListener('click', () => {
-  navbarMenu.classList.toggle('active');
-});
-
-
-
-
 
 const objet = document.getElementById('objet');
 const demandeRenseignement = document.getElementById('demande_renseignement');
