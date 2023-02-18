@@ -4,7 +4,7 @@
 
 body {
   margin: 0px;
-  font-family: "segoe ui";
+  font-family: 'segoe ui';
 }
 
 .nav {
@@ -15,46 +15,27 @@ body {
 }
 
 .nav > .nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: inline;
 }
 
 .nav > .nav-header > .nav-title {
+  display: inline-block;
   font-size: 22px;
   color: #fff;
-  padding: 10px;
-}
-
-.nav > .nav-btn {
-  display: block;
-  font-size: 22px;
-  color: #fff;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  padding: 10px;
-  cursor: pointer;
+  padding: 10px 10px 10px 10px;
 }
 
 .nav > .nav-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  background-color: #4d4d4d;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 .nav > .nav-links > a {
-  display: block;
+  display: inline-block;
   color: #fff;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #fff;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .nav > .nav-links > a:hover {
@@ -62,29 +43,28 @@ body {
   color: #4d4d4d;
 }
 
-.nav.active > .nav-links {
-  top: 50px;
+.nav-btn {
+  display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .nav > .nav-header > .nav-title {
-    padding: 10px 50px;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-  }
-  
+@media screen and (max-width: 600px) {
   .nav > .nav-links {
-    position: static;
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #4d4d4d;
+    z-index: 1;
   }
-  
   .nav > .nav-links > a {
-    border-bottom: none;
-    margin: 0 10px;
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
+  .nav > .nav-btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 }
