@@ -157,8 +157,8 @@
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-column-gap: 5rem;
-  grid-row-gap: 5rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
@@ -246,8 +246,8 @@
   z-index: 1;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #54c0a9;
-  font-size: 56px;
+  color: #00614c;
+  font-size: 48px;
   line-height: 74px;
   font-weight: 500;
 }
@@ -425,6 +425,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  color: #00614c;
   font-size: 48px;
   line-height: 140%;
   font-weight: 500;
@@ -3225,21 +3226,6 @@
   }
 }
 
-#w-node-_077318a6-ed93-cb86-0502-54d3e8f6d665-452c397b {
-  -ms-grid-column: span 1;
-      grid-column-start: span 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: span 1;
-  -ms-grid-row: span 1;
-      grid-row-start: span 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: span 1;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: auto;
-      justify-self: auto;
-}
-
 #w-node-_077318a6-ed93-cb86-0502-54d3e8f6d67c-452c397b {
   -ms-grid-column: span 1;
       grid-column-start: span 1;
@@ -3253,7 +3239,7 @@
       justify-self: stretch;
 }
 
-#w-node-b56d13c7-ca0d-dda0-7660-0c10fbaf3924-452c397b {
+#w-node-c310528f-6f43-383e-a570-01afe6459ab5-452c397b {
   -ms-grid-column: span 1;
       grid-column-start: span 1;
   -ms-grid-column-span: 1;
@@ -3262,25 +3248,8 @@
       grid-row-start: span 1;
   -ms-grid-row-span: 1;
   grid-row-end: span 1;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: auto;
-      justify-self: auto;
-}
-
-#w-node-b56d13c7-ca0d-dda0-7660-0c10fbaf3938-452c397b {
-  -ms-grid-column: span 1;
-      grid-column-start: span 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: span 1;
-  -ms-grid-row: span 1;
-      grid-row-start: span 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: span 1;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
 }
 
 @font-face {
